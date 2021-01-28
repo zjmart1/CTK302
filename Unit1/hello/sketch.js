@@ -1,11 +1,8 @@
 function setup() {
   createCanvas(500, 500);
-  textAlign(CENTER) ;
-}
 
+}
 function draw() {
-  background('blue') ;
-  fill('white') ;
-  textSize(32) ;
-  text("hello world!", width/2, height/2) ;
+  ellipse(width/2, height/2 100,100);
+  ellipse(width/2, height/2 + 75, 100,100);
 }
