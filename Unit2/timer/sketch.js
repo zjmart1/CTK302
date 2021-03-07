@@ -11,21 +11,36 @@ function draw() {
 
     case 0:
     background('red');
-    myTimer = myTimer + 1;
+
+    myTimer = myTimer + 1 ;
     if (myTimer > 3 * 60){
       myTimer = 0 ;
-      myState = 2 ;
+      myState = 1 ;
     }
     break;
 
     case 1:
     background('green');
+
     myTimer = myTimer + 1;
-    if (myTimer > 3 * 60){
+    if (myTimer > 5 * 60){
       myTimer = 0 ;
       myState = 2 ;
     }
     break;
+
+
+    case 2:
+    background('blue');
+
+    myTimer = myTimer + 1;
+    if (myTimer > 2 * 60){
+      myTimer = 0 ;
+      myState = 0 ;
+    }
+    break;
+
+
   }
 
 
