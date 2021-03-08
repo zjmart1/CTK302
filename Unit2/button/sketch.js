@@ -8,14 +8,16 @@ function setup() {
 
 function draw() {
   switch (state) {
-  	case 0:
+  case 0:
   	background('white');
   	text("case 0", 250, 250);
   	break;
-   	case 1:
+
+   case 1:
   	background('grey');
   	text("case 1", 250, 250);
   	break;
+
   case 2:
   	background('pink');
   	text("case 2", 250, 250);
@@ -26,11 +28,13 @@ function draw() {
 
 }
 function mouseReleased() {
-  if ((moseX > width/2-50)&&(mouseX < width/2+50)&&(mouseY>height-100)&&(mouseY<200)){
+
+if ((mouseX > width/2-50)&&(mouseX < width/2+50)&&(mouseY > height-100)&&(mouseY < height-50)){
 
   state = state + 1 ;
   if (state > 2) {
     state = 0;
+
   }
 }
 }
