@@ -22,6 +22,7 @@ vol = (mic.getLevel()).toFixed(2);
     case -1:
     background(100);
     text("click to start", width/2, height/2);
+    break;
 
 
     case 0 :
